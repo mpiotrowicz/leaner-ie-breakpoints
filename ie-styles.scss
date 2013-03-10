@@ -1,0 +1,8 @@
+//For the falback stylesheets, 2 extra parameters must be set
+// together, these will hide media queries in this sheet, except fort those called with $old-ie-default == true
+
+$old-ie : true; //sets the scene as being an IE7/8 stylesheet
+$breakpoint-media-output: false;  // Susy variable to ignore media queries
+
+@import "lean-susy"
+@import "site"

@@ -1,0 +1,14 @@
+$tabletScreen: 600px 6;
+$wideScreen: 1020px 8;
+
+@include lean-susy($tabletScreen) {
+  body {
+    color: #fff;
+  }
+} 
+
+@include lean-susy($wideScreen, true) {
+  body {
+    color: #000;
+  } 
+}
