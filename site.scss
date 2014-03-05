@@ -1,13 +1,13 @@
-$tabletScreen: 600px 6;
-$wideScreen: 1020px 8;
+$tabletScreen: 600px;
+$wideScreen: 1020px;
 
-@include lean-susy($tabletScreen) {
+@include lean-breakpoint($tabletScreen) {
   body {
     color: #fff;
   }
 } 
 
-@include lean-susy($wideScreen, true) {
+@include lean-breakpoint($wideScreen, true) {
   body {
     color: #000;
   } 

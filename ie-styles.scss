@@ -4,5 +4,5 @@
 $old-ie : true; //sets the scene as being an IE7/8 stylesheet
 $breakpoint-media-output: false;  // Susy variable to ignore media queries
 
-@import "lean-susy"
+@import "lean-breakpoint"
 @import "site"

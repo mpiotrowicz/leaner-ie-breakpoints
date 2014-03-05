@@ -1,12 +1,12 @@
 // add in an extra paremeter if the styles in this media query are to appear as your default IE7/8 styles
 // if true, it will just spit out contents without the media query in the IE7/8 sheet
-@mixin lean-susy($breakpoint, $old-ie-default: false){
+@mixin lean-breakpoint($breakpoint, $old-ie-default: false){
   @if $old-ie-default and $old-ie {
     @content;
   }
   @else {
   // if false, will just pour through the regular at-breakpoint Susy mixin
-    @include at-breakpoint($breakpoint) {
+    @include breakpoint($breakpoint) {
       @content;
     }
   }
